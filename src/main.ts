@@ -6,7 +6,8 @@ import { ValidationPipe } from '@nestjs/common';
 dotenv.config();
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  // { cors: true } allow us for Cross Domain AJAX Request
+  const app = await NestFactory.create(AppModule, { cors: true });
 
   // disable detailed validation error messages
   // app.useGlobalPipes(new ValidationPipe());
