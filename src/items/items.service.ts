@@ -4,10 +4,11 @@ import { Items } from '../items';
 
 @Injectable()
 export class ItemsService {
-  private readonly items: Items = {
-    1: {
+  private readonly items: Items = [
+    {
       id: 1,
       version: '1.7',
+      date: '2020-02-01',
       octreeDir: 'data',
       projection: '',
       points: 6417736,
@@ -32,7 +33,7 @@ export class ItemsService {
       scale: 0.001,
       hierarchyStepSize: 5,
     },
-  };
+  ];
 
   findAll(): Items {
     return this.items;
