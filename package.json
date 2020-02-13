@@ -2,7 +2,7 @@
   "name": "point-clouds-api",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "PyColors",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
