@@ -7,6 +7,7 @@ node_js:
   
 script:
   - yarn test
+  - yarn test:e2e
   - yarn build
 
 cache:
